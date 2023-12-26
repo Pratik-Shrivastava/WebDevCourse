@@ -3,64 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms and Inputs</title>
+    <title>Forms in HTML</title>
 </head>
 <body>
-    <h2>This is HTML forms Tutorials.</h2>
-    <form action="backend.php">
+    <h3>My Form</h3>
+    <form action="back.text">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" name="myName" id="name">
+    </div>
+    <br>
+    <div>
+        <label for="role">Role:</label>
+        <input type="text" name="myRole" id="role">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="date">Date:</label>
+        <input type="date" name="myDate" id="date">
+    </div>
+    <br>
+    <div>
+        <label for="bonus">Bonus:</label>
+        <input type="number" name="myBonus" id="bonus">
+    </div>
+    <br>
+    <div>
+        <label for="eligibility">Are you Eligible?</label>
+        <input type="checkbox" name="myEligibility" id="eligibility" checked>
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender:</label>
         <br>
-        <div>
-            Name: <input type="text" name="myName">
-        </div>
-        <br>
-        <div>
-            Role: <input type="text" name="myRole">
-        </div>
-        <br>
-        <div>
-            Email: <input type="email" name="myEmail">
-        </div>
-        <br>
-        <div>
-            Date: <input type="date" name="myDate">
-        </div>
-        <br>
-        <div>
-            Bonus: <input type="number" name="myBonus">
-        </div>
-        <br>
-        <div>
-            Are you eligible?: <input type="checkbox" name="myEligibility">
-
-            <!-- By default it will be checked if checked is used. -->
-            <!-- Are you eligible?: <input type="checkbox" name="myEligibility" checked> -->
-        </div>
-        <br>
-        <div>
-            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other <input type="radio" name="myGender">
-        </div>
-        <br>
-        <div>
-            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
-        </div>
-        <br>
-        <div>
-            <label for="car">Car</label>
-            <select name="myCar" id="car">
-
-                <!-- by using selected we indicate which car is selected by default -->
-                <option value="ind" >Indica</option>
-                <option value="swf" selected>Swift</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <input type="submit" value="Submit Now">
-            <input type="reset" value="Reset Now">
-        </div>
-        
+        Male<input type="radio" name="myGender" id="gender">
+        Female<input type="radio" name="myGender" id="gender">
+        Other<input type="radio" name="myGender" id="gender">
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf" selected>Swift</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="reset" value="Reset Now">
+        <input type="submit" value="Submit Now">
+    </div>
     </form>
-
-    
 </body>
 </html>
